@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blogas - Mastelis</title>
+  <link rel="stylesheet" href="../css.css">
+  <script>
+    ct = (e, c) => e.classList.toggle(c)
+    f = (q, el) => el ? el.querySelector(q) : document.querySelector(q)
+    showArticle = (article) => { ct(f('.article', article), 'showing') }
+  </script>
+</head>
+
+<body>
+  <main class="blog">
+    <article>
+      <div class="article-box" onclick="showArticle(this.parentNode)">
+        <div class="left">
+          <div class="title">#1 Mastelis</div>
+          <div class="subtitle">Ką reiškia šis žodis?</div>
+        </div>
+        <div class="right">
+          <div class="year">
+            2026
+          </div>
+          <div class="month_day">
+            0217
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h2>Ant popieriaus</h2>
+        <p>Realiame pasaulyje egzistuoja matematikos pasaulis kuriame kartais bandoma proporcingai atvaizduoti objektus esančius realiame. </p>
+        <p>Kad pavyktų išmatavus liniuote brėžinyje esantį nupieštą kažką sužinoti koks to dydis yra realybėje reikalingas mastelis. </p>
+        <p>Iš esmės tai žodis atitinkantis žodžius "proporcija" ar "santykis" nes jis reiškia kiek vienetų brėžinyje atitinka tų pačių vienetų realybėje.</p>
+        <p>Užrašomas yra taip: 1:1000 - tai reiškia, kad 1 milimetras brėžinyje atitinka 1000 arba 1 metrą realybėje.</p>
+        <p>Arba 1:5000000 - 1 milimetras atitinka 5 kilometrus realybėje.</p>
+        <h2>Ekrane</h2>
+        <p>Skaitmeninis šio žodžio atitikmuo galėtų būti žodis "rezoliucija" kuris dažnai reiškia kiek pikselių yra tam tikrame kvadratiniame vienete. Dažnai tam naudojamas colis (ang. inch) ir nusakoma "pixels per inch" (PPI).</p>
+        <p>Tačiau galima būtų išvesti ir labiau tiesioginę reikšmę kuri nereikšų pikselių kiekį, bet panašiai kaip mastelio naudojimas popieriuje leistų pamatuoti objektus ekrane ir juos sulyginti su realiais dydžiais.</p>
+        <p>Vaizdas ekrane gali būti priartinamas ar atitolinamas taip iš esmės keičiant mastelį. To pavyzdys yra žiūrėjimas į žemėlapį ir jo dydžio keitimas.</p>
+        <h2>Skaitmeninė liniuotė</h2>
+        <p></p>
+    </div>
+    </article>
+  </main>
+</body>
+
+</html>

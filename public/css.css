@@ -1,0 +1,105 @@
+      * {
+          font-family: monospace;
+          background-color: #222;
+          box-sizing: border-box;
+      }
+
+      body,
+      main {
+          margin: 0;
+          padding: 0;
+      }
+
+      article {
+          padding: 0;
+          margin: auto;
+          max-width: 600px;
+          border: 5px solid #ddd;
+          margin-top: 2em;
+      }
+
+      h1 {
+          font-size: 2em;
+          text-transform: uppercase;
+          letter-spacing: 0.5vmin;
+          color: #eee;
+          padding: 0.5em 0;
+      }
+
+      h2 {
+          font-size: 1.7em;
+          text-transform: uppercase;
+          letter-spacing: 0.5vmin;
+          color: #eee;
+          padding: 0.5em 0;
+      }
+
+      p {
+          font-size: 1.5em;
+          color: #ddd;
+          line-height: 1.5em;
+      }
+
+      .date,
+      .year,
+      .month_day {
+          font-size: 1.5em;
+          color: #fff;
+          text-align: center;
+          font-weight: bold;
+      }
+
+      .article-box {
+          padding: 1em;
+          user-select: none;
+          -webkit-user-select: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 420ms ease-in-out;
+          background-color: #222;
+      }
+
+      .article-box:hover {
+          cursor: pointer;
+      }
+
+      .article-box>.left>.title {
+          color: #eee;
+          font-size: 2em;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          margin-left: 0.5em;
+          margin-top: 0.3em;
+      }
+
+      .article-box>.left>.subtitle {
+          color: #eee;
+          font-size: 1em;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          margin-left: 1em;
+          margin-bottom: 1em;
+      }
+
+      .article-box>.right {
+          border-left: 5px solid #ddd;
+          padding: 0.5em;
+          margin: 0;
+      }
+
+      .article {
+          height: 0;
+          width: 0;
+          transition: all 420ms ease-in-out;
+          overflow: hidden;
+          text-align: center;
+      }
+
+      .showing {
+          height: auto;
+          width: auto;
+          margin: 1em;
+      }

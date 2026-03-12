@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geometry Lectures Summary</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 14pt; line-height: 1.5; }
+h1, h2 { margin-top: 24px; }
+ul { margin-left: 20px; }
+</style>
+</head>
+<body>
+
+<h1>Analytic Geometry – Lecture Summary</h1>
+
+<h2>Planes in Space</h2>
+<ul>
+  <li>General plane equation: Ax + By + Cz + D = 0</li>
+  <li>Normal vector of a plane: n = (A, B, C)</li>
+  <li>Parallel planes have proportional normal vectors.</li>
+  <li>Angle between planes is found using the angle between their normal vectors.</li>
+  <li>Distance from a point to a plane uses the standard distance formula with coefficients A, B, C, D.</li>
+</ul>
+
+<h2>Lines in 3D Space</h2>
+<ul>
+  <li>A line is defined by a point and a direction vector.</li>
+  <li>Vector form: r = r₀ + t·s</li>
+  <li>Parametric form: x = x₀ + lt, y = y₀ + mt, z = z₀ + nt</li>
+  <li>Canonical form: (x−x₀)/l = (y−y₀)/m = (z−z₀)/n</li>
+  <li>A line through two points is formed using their difference vector.</li>
+</ul>
+
+<h2>Distance Calculations</h2>
+<ul>
+  <li>Distance between parallel planes equals distance from any point on one plane to the other.</li>
+  <li>Used in volume computations (e.g., cube edge length from plane spacing).</li>
+</ul>
+
+<h2>Coordinate Transformations in the Plane</h2>
+<ul>
+  <li>Two main transformations: translation and rotation.</li>
+  <li><b>Translation:</b> shifts origin by (x₀, y₀)</li>
+  <li>x' = x − x₀, y' = y − y₀</li>
+  <li><b>Rotation by angle φ:</b></li>
+  <li>x = x'cosφ − y'sinφ</li>
+  <li>y = x'sinφ + y'cosφ</li>
+</ul>
+
+<h2>Second-Order Curves (Conics)</h2>
+<ul>
+  <li>General equation: a₁₁x² + 2a₁₂xy + a₂₂y² + a₁₃x + a₂₃y + a₃₃ = 0</li>
+  <li>Goal: reduce to canonical form.</li>
+  <li>Step 1: Rotate axes to eliminate the xy term.</li>
+  <li>Rotation angle chosen from: tan(2φ) = 2a₁₂ / (a₁₁ − a₂₂)</li>
+  <li>Step 2: Translate axes to remove linear terms.</li>
+  <li>Results in ellipse, hyperbola, or parabola canonical equations.</li>
+</ul>
+
+<h2>Second-Order Surfaces</h2>
+<ul>
+  <li>General quadratic surface equation in x, y, z.</li>
+  <li>Type remains second-order under coordinate changes.</li>
+  <li><b>Sphere:</b> (x−x₀)² + (y−y₀)² + (z−z₀)² = R²</li>
+  <li><b>Cones:</b> forms like x²/a² + y²/b² − z²/c² = 0</li>
+  <li>Cross-sections of cones produce conic curves.</li>
+  <li>Includes rotational second-order surfaces.</li>
+</ul>
+
+<h2>Canonical Reduction Strategy</h2>
+<ul>
+  <li>Remove cross terms by rotation.</li>
+  <li>Remove linear terms by translation.</li>
+  <li>Classify curve or surface from final canonical equation.</li>
+</ul>
+
+</body>
+</html>
