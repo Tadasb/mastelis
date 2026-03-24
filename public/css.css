@@ -103,3 +103,24 @@
           width: auto;
           margin: 1em;
       }
+
+      input {
+          background-color: #eee;
+          padding: 0.3em;
+          font-size: 1em;
+          display: block;
+      }
+
+      input:focus {
+          outline: none;
+      }
+
+      button {
+          line-height: 2em;
+          background-color: #eee;
+          color: #222;
+          padding: 0.3em;
+          font-size: 1em;
+          display: block;
+          margin-top: 1em;
+      }

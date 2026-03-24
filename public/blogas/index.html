@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blogas - Mastelis</title>
   <link rel="stylesheet" href="../css.css">
+  <script defer src="3n1.js"></script>
   <script>
     ct = (e, c) => e.classList.toggle(c)
     f = (q, el) => el ? el.querySelector(q) : document.querySelector(q)
@@ -30,19 +31,59 @@
         </div>
       </div>
       <div class="article">
-        <h2>Ant popieriaus</h2>
-        <p>Realiame pasaulyje egzistuoja matematikos pasaulis kuriame kartais bandoma proporcingai atvaizduoti objektus esančius realiame. </p>
-        <p>Kad pavyktų išmatavus liniuote brėžinyje esantį nupieštą kažką sužinoti koks to dydis yra realybėje reikalingas mastelis. </p>
-        <p>Iš esmės tai žodis atitinkantis žodžius "proporcija" ar "santykis" nes jis reiškia kiek vienetų brėžinyje atitinka tų pačių vienetų realybėje.</p>
-        <p>Užrašomas yra taip: 1:1000 - tai reiškia, kad 1 milimetras brėžinyje atitinka 1000 arba 1 metrą realybėje.</p>
+        <h2>Blogas mastelis</h2>
+        <p>Realiame pasaulyje egzistuoja matematikos pasaulis kuriame kartais bandoma proporcingai atvaizduoti objektus
+          esančius realiame. </p>
+        <p>Kad pavyktų išmatavus liniuote brėžinyje esantį nupieštą kažką sužinoti koks to dydis yra realybėje
+          reikalingas mastelis. </p>
+        <p>Iš esmės tai žodis atitinkantis žodžius "proporcija" ar "santykis" nes jis reiškia kiek vienetų brėžinyje
+          atitinka tų pačių vienetų realybėje.</p>
+        <p>Užrašomas yra taip: 1:1000 - tai reiškia, kad 1 milimetras brėžinyje atitinka 1000 arba 1 metrą realybėje.
+        </p>
         <p>Arba 1:5000000 - 1 milimetras atitinka 5 kilometrus realybėje.</p>
         <h2>Ekrane</h2>
-        <p>Skaitmeninis šio žodžio atitikmuo galėtų būti žodis "rezoliucija" kuris dažnai reiškia kiek pikselių yra tam tikrame kvadratiniame vienete. Dažnai tam naudojamas colis (ang. inch) ir nusakoma "pixels per inch" (PPI).</p>
-        <p>Tačiau galima būtų išvesti ir labiau tiesioginę reikšmę kuri nereikšų pikselių kiekį, bet panašiai kaip mastelio naudojimas popieriuje leistų pamatuoti objektus ekrane ir juos sulyginti su realiais dydžiais.</p>
-        <p>Vaizdas ekrane gali būti priartinamas ar atitolinamas taip iš esmės keičiant mastelį. To pavyzdys yra žiūrėjimas į žemėlapį ir jo dydžio keitimas.</p>
-        <h2>Skaitmeninė liniuotė</h2>
-        <p></p>
-    </div>
+        <p>Skaitmeninis šio žodžio atitikmuo galėtų būti žodis "rezoliucija" kuris dažnai reiškia kiek pikselių yra tam
+          tikrame kvadratiniame vienete. Dažnai tam naudojamas colis (ang. inch) ir nusakoma "pixels per inch" (PPI).
+        </p>
+        <p>Tačiau galima būtų išvesti ir labiau tiesioginę reikšmę kuri nereikšų pikselių kiekį, bet panašiai kaip
+          mastelio naudojimas popieriuje leistų pamatuoti objektus ekrane ir juos sulyginti su realiais dydžiais.</p>
+        <p>Vaizdas ekrane gali būti priartinamas ar atitolinamas taip iš esmės keičiant mastelį. To pavyzdys yra
+          žiūrėjimas į žemėlapį ir jo dydžio keitimas.</p>
+      </div>
+    </article>
+    <article>
+      <div class="article-box" onclick="showArticle(this.parentNode)">
+        <div class="left">
+          <div class="title">#2 Sirakūzų problema</div>
+          <div class="subtitle">Ar tikrai tai problema?</div>
+        </div>
+        <div class="right">
+          <div class="year">
+            2026
+          </div>
+          <div class="month_day">
+            0324
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h2>Sirakūzų problema</h2>
+        <p>Taip vadinama problema matematikoje kurios esmė paprasta: Imant bet kokį skaičių ir atliekant vieną iš dviejų
+          veiksmų pagal tai ar skaičius lyginis ar nelyginis visada galiausiai gaunamas skaičius 1.</p>
+        <p>Jeigu tai būtų įrodyta, tai šis reiškinys iš hipotezės ar konjunkcijos galėtų tapti teorija.</p>
+        <p>Veiksmai yra tokie:</p>
+        <p>Jei skaičius lyginis, jį tiesiog dalijame iš 2.</p>
+        <p>Jei nelyginis, tai dauginame iš 3 ir pridedame 1.</p>
+        <p>Apie šią problemą garsus matematika Terence Tao yra parašęs <a target="blank"
+            href="https://arxiv.org/pdf/1909.03562" target="_blank">mosklinį darbą</a></p>
+        <p>O mes pabandykime į viską pažiūrėti paprasčiau.</p>
+        <p>Atsidarę <a href="3n1.js" target="blank">šį failą</a> rasite trumpą JS kodą kuris tikrina ar skaičius (nr)
+          pradedant nuo 1 ir einant link begalybės pavirsta į vieną ar į mažesnį prieš tai jau patikrintą skaičių.</p>
+        <p>Programa kas sekundę atnaujina tikrinimą reikšmę čia: <strong><span id="tikrinamas">1</span></strong></p>
+        <p>Taip pat galima įvesti ir reikšmę nuo kurios norime pradėti.</p>
+        <input type="number" id="skaicius" value="1">
+        <button onclick="doMath()" id="mygtukas">Skaičiuoti</button>
+      </div>
     </article>
   </main>
 </body>
