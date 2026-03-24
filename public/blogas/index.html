@@ -76,12 +76,18 @@
         <p>Jei nelyginis, tai dauginame iš 3 ir pridedame 1.</p>
         <p>Apie šią problemą garsus matematika Terence Tao yra parašęs <a target="blank"
             href="https://arxiv.org/pdf/1909.03562" target="_blank">mosklinį darbą</a></p>
+        <p>Jame rašoma, kad kažkas jau patikrino visus skaičius iki 295147905179352825856 ir visi jie tiko.</p>
         <p>O mes pabandykime į viską pažiūrėti paprasčiau.</p>
         <p>Atsidarę <a href="3n1.js" target="blank">šį failą</a> rasite trumpą JS kodą kuris tikrina ar skaičius (nr)
           pradedant nuo 1 ir einant link begalybės pavirsta į vieną ar į mažesnį prieš tai jau patikrintą skaičių.</p>
-        <p>Programa kas sekundę atnaujina tikrinimą reikšmę čia: <strong><span id="tikrinamas">1</span></strong></p>
+        <p>Programa kas sekundę atnaujina tikrinimą reikšmę čia: <strong><span
+              id="tikrinamas">295147905179352825856</span></strong></p>
+        <p>Papildomai patikrinta: <strong><span id="papildomai">0</span></strong></p>
+        <p>Bendras skaičiavimo laikas: <strong><span id="laikas">0</span> s.</strong></p>
+        <p>Vidutinis greitis: <strong><span id="greitis">0</span> sk./s.</strong></p>
+        <p>Likę iki 2^69: <strong><span id="like">...</span></strong></p>
         <p>Taip pat galima įvesti ir reikšmę nuo kurios norime pradėti.</p>
-        <input type="number" id="skaicius" value="1">
+        <input type="number" id="skaicius" value="295147905179352825856">
         <button onclick="doMath()" id="mygtukas">Skaičiuoti</button>
       </div>
     </article>
