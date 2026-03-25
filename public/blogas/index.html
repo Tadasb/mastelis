@@ -85,10 +85,16 @@
         <p>Papildomai patikrinta: <strong><span id="papildomai">0</span></strong></p>
         <p>Bendras skaičiavimo laikas: <strong><span id="laikas">0</span> s.</strong></p>
         <p>Vidutinis greitis: <strong><span id="greitis">0</span> sk./s.</strong></p>
+        <p>Aktyvūs darbuotojai: <strong><span id="aktyvus">0</span></strong></p>
         <p>Likę iki 2^69: <strong><span id="like">...</span></strong></p>
-        <p>Taip pat galima įvesti ir reikšmę nuo kurios norime pradėti.</p>
-        <input type="number" id="skaicius" value="295147905179352825856">
-        <button onclick="doMath()" id="mygtukas">Skaičiuoti</button>
+        <hr>
+        <p>Nustatymai:</p>
+        <p>Darbuotojų skaičius (CPU branduoliai): <input type="number" id="darbuotojai" value="4" min="1" max="16"></p>
+        <p>Paketo dydis (kiek skaičių vienas darbuotojas patikrina vienu kartu): <input type="number" id="paketas"
+            value="1000000"></p>
+        <p>Pradinis skaičius:</p>
+        <input type="number" id="skaicius" value="295147905179352825856" style="width: 100%;">
+        <button onclick="doMath()" id="mygtukas" style="margin-top: 10px;">Skaičiuoti</button>
       </div>
     </article>
   </main>
